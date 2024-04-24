@@ -1,8 +1,10 @@
 let map;
 
 async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
+  const { Map, InfoWindow } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker")
+
+  const infoWindow = new InfoWindow();
 
   const map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 38.0336, lng: -78.5080 },
@@ -23,6 +25,9 @@ async function initMap() {
 
   marker.addListener("click", () => {
     console.log("clicked");
+    infoWindow.close()
+    infoWindow.setContent(marker.title);
+    infoWindow.open(marker.map, marker);
   });
 }
 
