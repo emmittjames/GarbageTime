@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico">
     <title>Garbage Time</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=${process.env.MAPSKEY}&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
 </head>
 <body>
-
-</body>
+    <gmp-map center="38.0336,-78.5080" zoom="16" map-id="DEMO_MAP_ID">
+      <!-- <gmp-advanced-marker position="40.12150192260742,-100.45039367675781" title="My location"></gmp-advanced-marker> -->
+    </gmp-map>
+  </body>
 </html>
