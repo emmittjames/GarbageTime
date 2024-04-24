@@ -10,6 +10,7 @@ async function initMap() {
     center: { lat: 38.0336, lng: -78.5080 },
     zoom: 16,
     mapId: 'abcde',
+    disableDefaultUI: true,
   });
 
   const greenBin = document.createElement("img");
