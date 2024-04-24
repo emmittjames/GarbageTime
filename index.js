@@ -2,7 +2,7 @@ let map;
 
 async function initMap() {
   const { Map, InfoWindow } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker")
+  const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker")
 
   const infoWindow = new InfoWindow();
 
@@ -14,7 +14,13 @@ async function initMap() {
 
   const greenBin = document.createElement("img");
   greenBin.src =
-    "./images/favicon.ico";
+    "./images/trash_can_green.png";
+  greenBin.style.width = "50px"; // Set the width to 100 pixels
+  greenBin.style.height = "60px";
+
+  const greenBinPin = new PinElement({
+    scale: 0.5,
+  });
 
   const marker = new google.maps.marker.AdvancedMarkerElement({
     map,
