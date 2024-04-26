@@ -13,21 +13,21 @@ async function initMap(data) {
     mapId: "abcde",
   });
 
-  const greenBin = document.createElement("img")
-  greenBin.src =
-    "./images/trash_can_green.png"
-  greenBin.style.width = "50px"
-  greenBin.style.height = "60px"
-
-  const greenBinPin = new PinElement({
-    scale: 0.5,
-  });
+  const bin = document.createElement("img")
+  if(data.main["temp"]>90){
+    bin.src="./images/trash_can_red.png"
+  }
+  else{
+    bin.src="./images/trash_can_green.png"
+  }
+  bin.style.width = "50px"
+  bin.style.height = "55px"
 
   const marker = new google.maps.marker.AdvancedMarkerElement({
     map,
     position: { lat: 38.0336, lng: -78.5080 },
     title: "trashcan1",
-    content: greenBin,
+    content: bin,
   });
 
   marker.addListener("click", () => {
@@ -61,6 +61,4 @@ async function initMapWithData() {
   }
 }
 
-// initMapWithData();
-
-initMap("hi")
+initMapWithData();
