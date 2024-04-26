@@ -1,15 +1,15 @@
 let map;
 
-async function initMap() {
+async function initMap(data) {
   const { Map, InfoWindow } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker")
 
   const infoWindow = new InfoWindow();
 
-  const map = new google.maps.Map(document.getElementById('map'), {
+  const map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 38.0336, lng: -78.5080 },
     zoom: 16,
-    mapId: 'abcde',
+    mapId: "abcde",
   });
 
   const greenBin = document.createElement("img");
@@ -37,4 +37,28 @@ async function initMap() {
   });
 }
 
-initMap();
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return null;
+  }
+}
+
+async function initMapWithData() {
+  apiUrl = "";
+  const data = await fetchData(apiUrl);
+  if (data) {
+    initMap(data);
+  } else {
+    console.error('Failed to fetch data.');
+  }
+}
+
+initMapWithData("ahhhh");
