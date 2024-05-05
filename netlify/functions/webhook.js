@@ -1,11 +1,11 @@
 exports.handler = async (event) => {
     try {
-      if (event.httpMethod !== "POST") {
-        return {
-          statusCode: 405,
-          body: JSON.stringify({ error: "Method Not Allowed" }),
-        };
-      }
+      // if (event.httpMethod !== "POST") {
+      //   return {
+      //     statusCode: 405,
+      //     body: JSON.stringify({ error: "Method Not Allowed" }),
+      //   };
+      // }
   
       // Process the webhook payload
       const payload = JSON.parse(event.body);
