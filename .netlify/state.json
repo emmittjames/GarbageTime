@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Charlottesville",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "VA",
+				"name": "Virginia"
+			},
+			"timezone": "America/New_York",
+			"latitude": 38.0321,
+			"longitude": -78.489
+		},
+		"timestamp": 1714897886904
+	}
+}
