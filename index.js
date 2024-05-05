@@ -65,7 +65,7 @@ async function fetchData(url) {
 
 const getTTNData = ()=> {
   fetch('/.netlify/functions/webhook')
-  .then(response => response.json)
+  .then(response => response.json())
   .then(data => console.log(data));
 }
 getTTNData();
