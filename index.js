@@ -64,7 +64,7 @@ async function fetchData(url) {
 // initMapWithData();
 
 const getTTNData = ()=> {
-  fetch('https://garbagetime1.netlify.app/.netlify/functions/webhook')
+  fetch('/.netlify/functions/webhook')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error fetching data:', error));
