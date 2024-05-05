@@ -25,7 +25,7 @@ async function initMap(data) {
 
   const marker = new google.maps.marker.AdvancedMarkerElement({
     map,
-    position: { lat: 38.0336, lng: -78.5080 },
+    position: { lat: 38.03343, lng: -78.50985 },
     title: "trashcan1",
     content: bin,
   });
