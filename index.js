@@ -51,14 +51,21 @@ async function fetchData(url) {
     return null
   }
 }
+// const backendUrl = "http://localhost:8888"
+// async function initMapWithData() {
+//   const data = await fetchData(backendUrl)
+//   if (data) {
+//     initMap(data)
+//   } else {
+//     console.error('Failed to fetch data.')
+//   }
+// }
 
-async function initMapWithData() {
-  const data = await fetchData(backendUrl)
-  if (data) {
-    initMap(data)
-  } else {
-    console.error('Failed to fetch data.')
-  }
+// initMapWithData();
+
+const getTTNData = ()=> {
+  fetch('/.netlify/functions/webhook')
+  .then(response => response.json)
+  .then(data => console.log(data));
 }
-
-initMapWithData();
+getTTNData();
