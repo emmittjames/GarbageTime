@@ -14,10 +14,10 @@ async function initMap(data) {
   });
 
   const bin = document.createElement("img")
-  if(data.main["Distance"]>10){
+  if(data.value.Distance>10){
     bin.src="./images/trash_can_green.png"
   }
-  else if(data.main["Distance"]>5){
+  else if(data.value.Distance>5){
     bin.src="./images/trash_can_yellow.png"
   }
   else{
