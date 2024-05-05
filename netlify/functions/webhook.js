@@ -2,7 +2,7 @@ exports.handler = async (event) => {
   try {
       // Process the webhook payload (e.g., parse JSON)
       const payload = JSON.parse(event.body);
-
+      console.log("HIIIII");
       // Process the data as needed
       // Example: Extract relevant information from the payload
       // const processedData = {
