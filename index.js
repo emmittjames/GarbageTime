@@ -64,7 +64,10 @@ async function fetchData(url) {
 // initMapWithData();
 
 const getTTNData = ()=> {
-  fetch('/.netlify/functions/webhook')
+  fetch('/.netlify/functions/webhook', 
+  {
+    method: 'POST',
+  })
   .then(response => response.json)
   .then(data => console.log(data));
 }
