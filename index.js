@@ -14,11 +14,14 @@ async function initMap(data) {
   });
 
   const bin = document.createElement("img")
-  if(data.main["temp"]>90){
-    bin.src="./images/trash_can_red.png"
+  if(data.main["Distance"]>10){
+    bin.src="./images/trash_can_green.png"
+  }
+  else if(data.main["Distance"]>5){
+    bin.src="./images/trash_can_yellow.png"
   }
   else{
-    bin.src="./images/trash_can_green.png"
+    bin.src="./images/trash_can_red.png"
   }
   bin.style.width = "50px"
   bin.style.height = "55px"
