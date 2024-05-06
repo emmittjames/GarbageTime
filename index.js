@@ -29,14 +29,17 @@ async function initMap(data) {
   const marker = new google.maps.marker.AdvancedMarkerElement({
     map,
     position: { lat: 38.03343, lng: -78.50985 },
-    title: data.value.ID,
+    title: (""+data.value.ID),
     content: bin,
   });
 
   marker.addListener("click", () => {
     console.log("clicked")
     infoWindow.close()
-    infoWindow.setContent(marker.title)
+    infoWindow.setContent({
+      "ID:": marker.title,
+      "Distance:": data.value.Distance,
+    })
     infoWindow.open(marker.map, marker)
   });
 }
