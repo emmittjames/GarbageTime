@@ -33,9 +33,16 @@ async function initMap(data) {
     content: bin,
   });
 
+  let distance = data.value.Distance
+  if(distance>37.5){
+    distance = 40
+  }
+  let distancePercent = Number(((40-distance)/40*100).toFixed(1))
+
   let html = (
-    "<h2>Bin ID: " + marker.title + "</h2><h3>" + 
-    "Distance: " + Number(data.value.Distance.toFixed(3)) + " cm </h3>"
+    "<h2>Bin ID: " + marker.title + "</h2>" + 
+    "<h3>Distance: " + Number(data.value.Distance.toFixed(3)) + " cm</h3>" +
+    "<h3>" + distancePercent + "% full</h3>"
   )
 
   marker.addListener("click", () => {
