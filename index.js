@@ -43,7 +43,7 @@ async function initMap(data) {
 
   let html = (
     "<h2>Bin ID: " + marker.title + "</h2>" + 
-    "<h3>Distance: " + Number(data.value.Distance.toFixed(3)) + " cm</h3>" +
+    "<h3>Distance: " + Number(data.value.Distance.toFixed(1)) + " cm</h3>" +
     "<h3>" + distancePercent + "% full</h3>"
   )
 
