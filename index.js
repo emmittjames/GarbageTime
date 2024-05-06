@@ -14,10 +14,10 @@ async function initMap(data) {
   });
 
   const bin = document.createElement("img")
-  if(data.value.Distance>10){
+  if(data.value.Distance>30){
     bin.src="./images/trash_can_green.png"
   }
-  else if(data.value.Distance>5){
+  else if(data.value.Distance>10){
     bin.src="./images/trash_can_yellow.png"
   }
   else{
@@ -29,7 +29,7 @@ async function initMap(data) {
   const marker = new google.maps.marker.AdvancedMarkerElement({
     map,
     position: { lat: 38.03343, lng: -78.50985 },
-    title: "trashcan1",
+    title: data.value.ID,
     content: bin,
   });
 
