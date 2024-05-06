@@ -33,13 +33,15 @@ async function initMap(data) {
     content: bin,
   });
 
+  let html = (
+    "<h2>" + marker.title + "</h2><h3>" + 
+    "Disance: " + data.value.Distance + "</h3>"
+  )
+
   marker.addListener("click", () => {
     console.log("clicked")
     infoWindow.close()
-    infoWindow.setContent({
-      "ID:": marker.title,
-      "Distance:": data.value.Distance,
-    })
+    infoWindow.setContent(html)
     infoWindow.open(marker.map, marker)
   });
 }
