@@ -33,11 +33,13 @@ async function initMap(data) {
     content: bin,
   });
 
-  let distance = data.value.Distance
-  if(distance>37.5){
-    distance = 40
+  const distanceToBottomOfBin = 40
+
+  let tempDistance = data.value.Distance
+  if(tempDistance>37.5){
+    tempDistance = 40
   }
-  let distancePercent = Number(((40-distance)/40*100).toFixed(1))
+  let distancePercent = Number(((distanceToBottomOfBin-tempDistance)/distanceToBottomOfBin*100).toFixed(1))
 
   let html = (
     "<h2>Bin ID: " + marker.title + "</h2>" + 
