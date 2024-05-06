@@ -34,8 +34,8 @@ async function initMap(data) {
   });
 
   let html = (
-    "<h2>" + marker.title + "</h2><h3>" + 
-    "Disance: " + data.value.Distance + "</h3>"
+    "<h2>Bin ID: " + marker.title + "</h2><h3>" + 
+    "Distance: " + Number(data.value.Distance.toFixed(3)) + " cm </h3>"
   )
 
   marker.addListener("click", () => {
