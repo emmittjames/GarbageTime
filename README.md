@@ -18,9 +18,9 @@ Project created with:
 * CSS - Frontend
 * Python - Backend
 * C++ - Sensor
-* Express.js
-* ~~MySQL~~
-* PostgreSQL
+* [Heltec LoRa board](https://heltec.org/project/wifi-lora-32-v3/) - Transmitting to LoraWAN Network
+* [The Things Network](https://www.thethingsnetwork.org/) - LoraWAN Network
+* [Ultrasonic Sensor](https://www.adafruit.com/product/4007)
 * [Google Maps API](https://developers.google.com/maps)
 
 Project hosted with:
