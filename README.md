@@ -1,23 +1,23 @@
-# [UVA Water](https://uvawater.net)
+# Garbage Time :D
 
 ## Table of contents
 * [General Info](#general-info)
 * [Technologies](#technologies)
-* [Cloning](#cloning)
 * [Sample Images](#sample-images)
-* [License](#license)
 
 ## General Info
-#### Website link: [uvawater.net](https://uvawater.net)
-#### UVA Water news article: [https://dailyprogress.com/news/uva/new-student-developed-website-lets-you-review-uva-drinking-fountains/article_2a4e5730-a65b-11ed-9514-6f3450e7cd00.html](https://dailyprogress.com/news/uva/new-student-developed-website-lets-you-review-uva-drinking-fountains/article_2a4e5730-a65b-11ed-9514-6f3450e7cd00.html)
+#### Website link: [garbagetime1.netlify.app]([https://uvawater.net](https://garbagetime1.netlify.app/))
 This website allows users to view ratings for water foutnains around grounds at UVA by clicking on markers displayed on a map. Users can also submit their own ratings via the rating form or any other kind of feedback via the contact form.
+
+This project is based around using an [IOT LoRa board](https://heltec.org/project/wifi-lora-32-v3/) to broadcast sensor data from a trashcan to a [LoRaWAN](https://en.wikipedia.org/wiki/LoRa) network ([The Things Network](https://www.thethingsnetwork.org/)). The sensor data is collected by an ultrasonic sensor that measures the distance from the lid of the trash can to its bottom, indicating how full or empty the trash can is. This data is then retrieved from The Things Network by the backend and sent to the frontend for display on a map.
 	
 ## Technologies
 Project created with:
-* JavaScript
-* HTML
-* CSS
-* Node.js
+* JavaScript - Frontend
+* HTML - Frontend
+* CSS - Frontend
+* Python - Backend
+* C++ - Sensor
 * Express.js
 * ~~MySQL~~
 * PostgreSQL
@@ -25,10 +25,7 @@ Project created with:
 
 Project hosted with:
 * [Netlify](https://www.netlify.com) - Frontend hosting
-* ~~[Cyclic](https://www.cyclic.sh) - Backend hosting~~
 * [Render](https://render.com/) - Backend hosting
-* ~~[PlanetScale](https://planetscale.com/) - MySQL database hosting~~
-* [Neon](https://neon.tech/) - PostgreSQL database hosting
 
 ## Cloning
 1. Clone the repository
@@ -60,3 +57,4 @@ const BACKEND_URL = "https://localhost:3000"
 
 ## License
 Distributed under the MIT License. See ```LICENSE``` for more information
+
