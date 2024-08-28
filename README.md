@@ -27,23 +27,6 @@ Project hosted with:
 * [Netlify](https://www.netlify.com) - Frontend hosting
 * [Render](https://render.com/) - Backend hosting
 
-## Cloning
-1. Clone the repository
-2. [Download](https://www.postgresql.org/download/) and install PostgreSQL on your machine with the default port of 5432
-3. Create a database in PostgreSQL
-4. Create a .env file in the server directory
-5. Put the following into the .env file using your PostgreSQL credentials:
-```
-DATABASE_URL = "postgres://Your_PostgreSQL_username:Your_PostgreSQL_password@localhost:5432/Your_PostgreSQL_database_name"
-PORT = "3000"
-```
-6. Create a file called env.js in the client directory
-7. Put the following into env.js:
-```
-const BACKEND_URL = "https://localhost:3000"
-```
-8. Everything should be ready to work on your localhost!
-
 ## Sample Images
 
 #### Viewing ratings on the map
@@ -54,7 +37,3 @@ const BACKEND_URL = "https://localhost:3000"
 
 #### Giving feedback on the site
 <img width="1440" alt="Submitting feedback" src="https://user-images.githubusercontent.com/90576219/216737404-2fcf3b53-143b-4d7b-8227-9dcc17d944c9.png">
-
-## License
-Distributed under the MIT License. See ```LICENSE``` for more information
-
