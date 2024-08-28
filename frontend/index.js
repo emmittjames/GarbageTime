@@ -8,7 +8,7 @@ async function initMap(data) {
   const infoWindow = new InfoWindow();
 
   const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 38.0342, lng: -78.5095 },
+    center: { lat: 38.0336, lng: -78.5080 },
     zoom: 16,
     mapId: "abcde",
   });
@@ -56,7 +56,6 @@ async function initMap(data) {
 }
 
 async function fetchData(url) {
-  /*
   try {
     const response = await fetch(url)
     if (!response.ok) {
@@ -68,14 +67,6 @@ async function fetchData(url) {
     console.error("Error fetching data:", error)
     return null
   }
-    */
-   return {
-    value: {
-        Distance: 1.3,
-        ID: "GarbageTime1"
-    }
-};
-
 }
 
 async function initMapWithData() {
