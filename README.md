@@ -29,11 +29,14 @@ Project hosted with:
 
 ## Sample Images
 
-#### Viewing ratings on the map
-<img width="1440" alt="Viewing ratings" src="https://user-images.githubusercontent.com/90576219/216737244-dd2f58f1-1dfe-47fb-bbb1-f2856571b41e.png">
+#### Setup on a trash can lid
 
-#### Submitting a water fountain rating
-<img width="1440" alt="Submitting rating" src="https://user-images.githubusercontent.com/90576219/216737257-750f673f-5447-4047-9f72-cd9d08849670.png">
+#### Mostly empty bin
+<img width="1440" alt="Screenshot 2024-08-28 at 7 48 40 PM" src="https://github.com/user-attachments/assets/418a6d9e-b1e6-4ae4-941b-5ff85e02ee86">
 
-#### Giving feedback on the site
-<img width="1440" alt="Submitting feedback" src="https://user-images.githubusercontent.com/90576219/216737404-2fcf3b53-143b-4d7b-8227-9dcc17d944c9.png">
+#### Medium bin
+<img width="1440" alt="Screenshot 2024-08-28 at 7 47 12 PM" src="https://github.com/user-attachments/assets/e95578cd-0517-4957-9605-a724b44b291a">
+
+#### Mostly full bin
+<img width="1440" alt="Screenshot 2024-08-28 at 7 49 30 PM" src="https://github.com/user-attachments/assets/27f09c50-1945-4d5b-92fb-badad7438d27">
+
