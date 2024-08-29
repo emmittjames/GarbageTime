@@ -6,9 +6,7 @@
 * [Sample Images](#sample-images)
 
 ## General Info
-#### Website link: [garbagetime1.netlify.app]([https://uvawater.net](https://garbagetime1.netlify.app/))
-This website allows users to view ratings for water foutnains around grounds at UVA by clicking on markers displayed on a map. Users can also submit their own ratings via the rating form or any other kind of feedback via the contact form.
-
+#### Website link: [garbagetime1.netlify.app](https://garbagetime1.netlify.app/)
 This project is based around using an [IOT LoRa board](https://heltec.org/project/wifi-lora-32-v3/) to broadcast sensor data from a trashcan to a [LoRaWAN](https://en.wikipedia.org/wiki/LoRa) network ([The Things Network](https://www.thethingsnetwork.org/)). The sensor data is collected by an ultrasonic sensor that measures the distance from the lid of the trash can to its bottom, indicating how full or empty the trash can is. This data is then retrieved from The Things Network by the backend and sent to the frontend for display on a map.
 	
 ## Technologies
@@ -20,8 +18,8 @@ Project created with:
 * C++ - Sensor
 * [Heltec LoRa board](https://heltec.org/project/wifi-lora-32-v3/) - Transmitting to LoraWAN Network
 * [The Things Network](https://www.thethingsnetwork.org/) - LoraWAN Network
-* [Ultrasonic Sensor](https://www.adafruit.com/product/4007)
-* [Google Maps API](https://developers.google.com/maps)
+* [Ultrasonic Sensor](https://www.adafruit.com/product/4007) - Measuring distance
+* [Google Maps API](https://developers.google.com/maps) - Displaying data
 
 Project hosted with:
 * [Netlify](https://www.netlify.com) - Frontend hosting
