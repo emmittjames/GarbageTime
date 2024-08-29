@@ -27,7 +27,7 @@ Project hosted with:
 
 ## Sample Images
 
-#### Setup on a trash can lid
+#### Set up on a trash can lid
 <img width="525" alt="Trash can setup" src="https://github.com/user-attachments/assets/c722a8fc-aa1b-4ffe-ab54-0c1cc59289d0">
 
 #### Mostly empty bin
