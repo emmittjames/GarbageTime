@@ -1,4 +1,4 @@
-# Garbage Time :D
+# [Garbage Time :D](https://garbagetime1.netlify.app/)
 
 ## Table of contents
 * [General Info](#general-info)
@@ -7,7 +7,7 @@
 
 ## General Info
 #### Website link: [garbagetime1.netlify.app](https://garbagetime1.netlify.app/)
-This project is based around using an [IOT LoRa board](https://heltec.org/project/wifi-lora-32-v3/) to broadcast sensor data from a trashcan to a [LoRaWAN](https://en.wikipedia.org/wiki/LoRa) network ([The Things Network](https://www.thethingsnetwork.org/)). The sensor data is collected by an ultrasonic sensor that measures the distance from the lid of the trash can to its bottom, indicating how full or empty the trash can is. This data is then retrieved from The Things Network by the backend and sent to the frontend for display on a map.
+This project is based around using an [IOT LoRa board](https://heltec.org/project/wifi-lora-32-v3/) to broadcast sensor data from a trash can to a [LoRaWAN](https://en.wikipedia.org/wiki/LoRa) network ([The Things Network](https://www.thethingsnetwork.org/)). The sensor data is collected by an ultrasonic sensor that measures the distance from the lid of the trash can to its bottom, indicating how full or empty the trash can is. This data is then retrieved from The Things Network by the backend and sent to the frontend for display on a map.
 	
 ## Technologies
 Project created with:
@@ -33,7 +33,7 @@ Project hosted with:
 #### Mostly empty bin
 <img width="1440" alt="Screenshot 2024-08-28 at 7 48 40 PM" src="https://github.com/user-attachments/assets/418a6d9e-b1e6-4ae4-941b-5ff85e02ee86">
 
-#### Medium bin
+#### Half full bin
 <img width="1440" alt="Screenshot 2024-08-28 at 7 47 12 PM" src="https://github.com/user-attachments/assets/e95578cd-0517-4957-9605-a724b44b291a">
 
 #### Mostly full bin
