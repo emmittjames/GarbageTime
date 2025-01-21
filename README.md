@@ -7,7 +7,7 @@
 
 ## General Info
 #### Website link: [garbagetime1.netlify.app](https://garbagetime1.netlify.app/)
-This project is based around using an [IOT LoRa board](https://heltec.org/project/wifi-lora-32-v3/) to broadcast sensor data from a trash can to a [LoRaWAN](https://en.wikipedia.org/wiki/LoRa) network ([The Things Network](https://www.thethingsnetwork.org/)). The sensor data is collected by an ultrasonic sensor that measures the distance from the lid of the trash can to its bottom, indicating how full or empty the trash can is. This data is then retrieved from The Things Network by the backend and sent to the frontend for display on a map.
+This project utilizes an [IOT LoRa board](https://heltec.org/project/wifi-lora-32-v3/) to broadcast sensor data from a trash can to a [LoRaWAN](https://en.wikipedia.org/wiki/LoRa) network ([The Things Network](https://www.thethingsnetwork.org/)). The sensor data is collected by an ultrasonic sensor that measures the distance from the lid of the trash can to its bottom, indicating how full or empty the trash can is. This data is then retrieved from The Things Network by the backend and sent to the frontend for display on a map.
 	
 ## Technologies
 Project created with:
